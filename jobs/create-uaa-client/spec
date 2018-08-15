@@ -1,0 +1,27 @@
+---
+name: create-uaa-client
+
+packages: []
+
+templates:
+  run.sh.erb: bin/run
+
+consumes:
+- name: cloud_controller
+  type: cloud_controller
+
+properties:
+  cf.ssl_skip_cert_verify:
+    description: 'Skip SSL validation when connecting to Cloud Foundry API'
+    default: false
+
+  uaa.admin_client_id:
+    description: 'The UAA admin client id (required scope is `uaa.admin`).'
+    default: 'admin'
+  uaa.admin_client_secret:
+    description: 'The UAA admin client secret'
+  uaa.grafana_client_id:
+    description: 'The UAA grafana oauth2 client id. Put an existing client id or one you want the job to create. Note the client required scopes: `openid`.'
+    default: 'grafana'
+  uaa.grafana_client_secret:
+    description: 'The UAA grafana oauth2 client secret'

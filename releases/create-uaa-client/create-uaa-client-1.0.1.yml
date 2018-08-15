@@ -1,0 +1,9 @@
+name: create-uaa-client
+version: 1.0.1
+commit_hash: empty
+uncommitted_changes: true
+jobs:
+- name: create-uaa-client
+  version: de2d2e6ac850cd07c8a18b06665a94e8400cea9b
+  fingerprint: de2d2e6ac850cd07c8a18b06665a94e8400cea9b
+  sha1: 44f95c7d0869fa2aa55b9e733c2c8509b636b391
